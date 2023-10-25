@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       
+        <meta charset="UTF-8">
+        <title>Formulario de inscripción al Sistema</title>
+
+        <style>
+            label {
+                display: inline-block; /* Permite aplicar justificación */
+                width: 20%; /* Ajusta el ancho del label según tu preferencia */
+                text-align: justify;
+            }
+            .caja_formulario {
+            border: 1px solid #ccc;
+            padding: 10px;
+            padding-left: 50px;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 10px;
+            background-color : #fff;
+            }
+            .obligatorio {
+                margin-left: 320px;
+                font-size: small;
+                color:red;
+            }
+        </style>
+        
+    </head>
+    <body style="width:1000px ; margin: auto;">  
+       
+        <a href="/tablas/main_tablas_form.html" style="margin-left: 125px;">Tablas y formularios HTML</a>
+
+        <div class="caja_formulario"> 
+            
+            <table>
+                <tr>
+                    <td><img  src="/tablas/img/form-image2.jpg" alt="foto"></td>
+                    <td><h1 style="color:black;">Formulario de inscripción al Sistema</h1><p class="obligatorio">Todos los campos son obligatorios</p></td>
+                </tr>
+                
+            </table>
+                   
+            <form action="/proceso.php" method="POST">
+                <label for="nombre"><b>Nombre</b></label>         
+                <input type="text" id="nombre" name="nombre" required> <br>
+
+                <label for="apellidos"><b>Apellidos</b></label> 
+                <input type="texto" id="apellidos" name="apellidos" required> <br>
+            
+                <label for="empresa"><b>Empresa/Institucion</b></label>
+                <input type="text" id="empresa" name="empresa" required> <br>
+            
+                <label for="sectores"><b>Sector de la empresa</b></label>
+                <select name="sectores" id="sectores">
+                    
+                    <option value="primario">Primario</option>
+                    <option value="secundario">Secundario</option>
+                    <option value="terciario">Terciario</option>
+                   
+                </select><br>
+            
+                <label for="cargo"><b>Cargo</b></label>
+                <input type="texto" id="cargo" name="cargo" required> <br>
+            
+                <label for="nombre de usuario"><b>Nombre de usuario</b></label>
+                <input type="text" id="nombre de usuario" name="nombre de usuario" required> (Nombre con el que se identificará dentro del sistema)<br>
+                
+                <label for="contraseña"><b>Contraseña</b></label>
+                <input type="password" id="Contraseña" name="Contraseña" required> (Procure utilizar combinaciones alfanuméricas)<br>
+                <label for="contraseña"><b>Repita contraseña</b></label>
+                <input type="password" id="Contraseña" name="Contraseña" required><br>
+                
+                <label for="email"><b>Correo electrónico</b></label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="términos"></label>
+                <input type="checkbox" id="Términos" name="términos" required>He leido y acepto los términos del sistema <br>
+
+                <input type="submit" style="margin-left: 250px;"></input>
+
+            </form>
+
+        </div>
+        
+    </body>
+       
+</html>
+
+
+
+
